@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-class</title>
+
+    <style>
+        /*:hover{*/
+        /*    color: red;*/
+        /*}*/
+
+        h1:hover {
+            color: greenyellow;
+        }
+
+        h1:active {
+            color: skyblue;
+        }
+
+        a:link {
+            color: hotpink;
+        }
+
+        a:visited {
+            color: aqua;
+        }
+
+        input:focus {
+            outline: none;
+            background-color: red;
+        }
+
+        /*li:first-child {*/
+        /*    color: lightgreen;*/
+        /*}*/
+
+        /*li:last-child {*/
+        /*    color: cornflowerblue;*/
+        /*}*/
+
+        /*li:nth-child(2) {*/
+        /*    color: mediumpurple;*/
+        /*}*/
+
+        /*li:nth-child(3) {*/
+        /*    color: orange;*/
+        /*}*/
+
+        /*li:nth-child(4) {*/
+        /*    color: yellow;*/
+        /*}*/
+
+        /*li:nth-last-child(2) {*/
+        /*    background-color: brown;*/
+        /*}*/
+
+        /*li:nth-child(odd) {*/
+        /*    color: yellow;*/
+        /*}*/
+
+        /*li:nth-child(even) {*/
+        /*    color: brown;*/
+        /*}*/
+
+        /*li:nth-child(n+4) {*/
+        /*    color: blue;*/
+        /*}*/
+
+        /*li:nth-child(3n-1) {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*li:nth-child(3n+1) {*/
+        /*    color: red;*/
+        /*}*/
+
+        li:nth-child(4n) {
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Hello World!</h1>
+
+    <a href="https://www.bolton.ac.uk/">UoBolton</a>
+    <a href="https://www.westminister.ac.uk/">UoWestminster</a>
+    <a href="https://www.cardiffmet.ac.uk/">Cardiffmet</a>
+
+    <br><br>
+
+    <input type="text">
+
+    <ol>
+        <li>Java</li>
+        <li>GO</li>
+        <li>.Net</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>Pearl</li>
+    </ol>
+
+</body>
+</html>

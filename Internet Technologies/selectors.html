@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+  <style>
+    h1 {
+        color: blue;
+    }
+
+    p {
+        background: hotpink;
+    }
+
+    #special-topic {
+        background-color: yellow;
+    }
+
+    .my-topic {
+        background-color: red;
+    }
+
+    * {
+        color: greenyellow;
+    }
+
+    [name] {
+        background-color: greenyellow;
+    }
+
+    [name="name2"] {
+        color: red;
+    }
+
+    [href^="https://"] {
+        background-color: aqua;
+    }
+
+    [href$=".lk"] {
+        background-color: lightpink;
+    }
+
+    [href*="ijse"] {
+        background-color: lightpink;
+    }
+
+    [href~="ijse"] {
+        background-color: orange;
+    }
+
+    p[name] {
+        background-color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hello World! - 1</h1>
+  <p>Welcome to my Website</p>
+
+  <h1 class="my-topic">Hello World! - 2</h1>
+  <p>Welcome to my Website</p>
+
+  <h1 id="special-topic" class="my-topic">Hello World! - 3</h1>
+  <p>Welcome to my Website</p>
+
+  <h1 class="my-topic">Hello World! - 4</h1>
+  <p>Welcome to my Website</p>
+
+  <a href="https://www.ijse.lk">IJSE 1</a>
+  <a href="http://www.ijse.lk" name="name1">IJSE 2</a>
+  <a href="www.ijse.lk">IJSE 3</a>
+  <a href="https://ijse.com" name="name2">IJSE 4</a>
+  <a href="www.ijse.solutions">IJSE 5</a>
+  <a href="www.solutions.lk">IJSE 6</a>
+  <a href="www.google ijse lankasolutions.net">IJSE 7</a>
+
+  <p name="name2">Welcome to tech world</p>
+  <p>Welcome to tech world</p>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade</title>
+
+    <style>
+        /*X,X,X,X = 1000,100,10,1*/
+
+        button { /*0,1,0,0*/
+            color: red;
+        }
+
+        #my-button { /*0,0,0,1*/
+            color: blue;
+        }
+
+        section>p {
+            color: greenyellow;
+        }
+
+        section>.my-text { /* section -> 0,0,0,1 | > -> 0,0,0,0 | .my-text -> 0,0,1,0 || total -> 0,0,1,1 */
+            color: aqua;
+        }
+
+        #my-text-id {
+            color: mediumpurple;
+        }
+
+        .my-text { /* 0,0,1,0 */
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="my-button" style="color: yellow /*1,0,0,0*/" >Click Me</button>
+
+    <section>
+        <p id="my-text-id" class="my-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti ex inventore, laborum minima minus neque placeat possimus recusandae voluptatum. Aliquid asperiores harum iusto magnam, repellendus voluptate! Eos, omnis, saepe?
+        </p>
+    </section>
+</body>
+</html>

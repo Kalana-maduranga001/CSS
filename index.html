@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo elements</title>
+
+  <style>
+
+    h1::before {
+    /*  content: "😀";*/
+    }
+
+    h1::after {
+    /*  content: "😀";*/
+    }
+
+    h1::first-letter {
+      color: red;
+    }
+
+    p::first-line {
+      color: blue;
+    }
+
+    p::selection {
+      background-color: hotpink;
+    }
+
+    li::marker{
+      content: "👍";
+    }
+
+    input::placeholder {
+      color: red;
+    }
+
+    /* input::file-selector-button {
+      background-color: hotpink;
+    } */
+
+    input::file-selector-button:hover {
+      background-color: rebeccapurple;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Hello World!</h1>
+
+  <ol>
+    <li>Item 1</li>
+    <li>Item 1</li>
+    <li>Item 1</li>
+    <li>Item 1</li>
+    <li>Item 1</li>
+  </ol>
+
+  <input type="text" placeholder="Enter your name">
+  <input type="file">
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, asperiores autem commodi consequuntur dolor dolore, ea harum hic illo inventore ipsum laboriosam laudantium magni odio possimus quasi quibusdam rem repellendus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, asperiores autem commodi consequuntur dolor dolore, ea harum hic illo inventore ipsum laboriosam laudantium magni odio possimus quasi quibusdam rem repellendus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, asperiores autem commodi consequuntur dolor dolore, ea harum hic illo inventore ipsum laboriosam laudantium magni odio possimus quasi quibusdam rem repellendus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, asperiores autem commodi consequuntur dolor dolore, ea harum hic illo inventore ipsum laboriosam laudantium magni odio possimus quasi quibusdam rem repellendus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, asperiores autem commodi consequuntur dolor dolore, ea harum hic illo inventore ipsum laboriosam laudantium magni odio possimus quasi quibusdam rem repellendus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, asperiores autem commodi consequuntur dolor dolore, ea harum hic illo inventore ipsum laboriosam laudantium magni odio possimus quasi quibusdam rem repellendus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, asperiores autem commodi consequuntur dolor dolore, ea harum hic illo inventore ipsum laboriosam laudantium magni odio possimus quasi quibusdam rem repellendus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, asperiores autem commodi consequuntur dolor dolore, ea harum hic illo inventore ipsum laboriosam laudantium magni odio possimus quasi quibusdam rem repellendus!
+  </p>
+</body>
+</html>

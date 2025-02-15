@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+</head>
+<body>
+<!--    <form>-->
+<!--        <input type="text" placeholder="Enter your name">-->
+<!--        <br><br>-->
+<!--        <input type="number" placeholder="Enter your age">-->
+<!--        <br><br>-->
+<!--        <input type="password" placeholder="Enter your password">-->
+<!--        <br><br>-->
+<!--        <input type="email" placeholder="Enter your email">-->
+<!--        <br><br>-->
+<!--        <input type="url" placeholder="Enter your website">-->
+<!--        <br><br>-->
+<!--        <input type="search" placeholder="Enter your search">-->
+<!--        <br><br>-->
+<!--        <input type="tel" placeholder="Enter your phone">-->
+<!--        <br><br>-->
+<!--        <input type="checkbox">-->
+<!--        <input type="checkbox" checked>-->
+<!--        <br><br>-->
+<!--        <input type="radio">-->
+<!--        <input type="radio" checked>-->
+<!--        <br><br>-->
+<!--        <input type="range">-->
+<!--        <br><br>-->
+<!--        <input type="color">-->
+<!--        <br><br>-->
+<!--        <input type="date" min="2025-01-05" max="2025-01-29">-->
+<!--        <input type="datetime-local">-->
+<!--        <br><br>-->
+<!--        <input type="time">-->
+<!--        <br><br>-->
+<!--        <input type="month">-->
+<!--        <br><br>-->
+<!--        <input type="week">-->
+<!--        <br><br>-->
+<!--        <input type="file">-->
+<!--        <br><br>-->
+<!--        <input type="image" src="assets/images/car.jpg">-->
+<!--        <br><br>-->
+<!--        <input type="button" value="Click Me!">-->
+<!--        <input type="submit" value="Submit">-->
+<!--        <input type="reset" value="Reset">-->
+<!--        <br><br>-->
+<!--        <input type="hidden">-->
+<!--    </form>-->
+
+    <form action="http://localhost:8080/form" method="post">
+        <div>
+            <label for="firstname">First Name</label><br>
+            <input
+                    type="text"
+                    id="firstname"
+                    placeholder="First Name"
+                    name="firstname"
+            >
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lastname">Last Name</label><br>
+            <input
+                    type="text"
+                    id="lastname"
+                    placeholder="Last Name"
+                    name="lastname"
+            >
+        </div>
+
+        <br>
+
+        <div>
+            <label for="address">Address</label><br>
+            <textarea
+                    id="address"
+                    placeholder="Enter your address"
+                    rows="10"
+                    cols="50"
+            ></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="select">Select Subject</label><br>
+            <select name="subject" id="select">
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JS</option>
+            </select>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Status</legend>
+                <input type="radio" name="status" value="married"><label>Married</label><br>
+                <input type="radio" name="status" value="happy"><label>Still Happy</label><br>
+            </fieldset>
+        </div>
+
+        <br>
+
+        <label for="country">Country</label><br>
+        <input type="text" id="country" list="country-list">
+
+        <datalist id="country-list">
+            <option value="sri-lanka">Sri Lanka</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="brazil">Brazil</option>
+        </datalist>
+
+        <select>
+            <optgroup label="Asia">
+                <option value="sri-lanka">Sri Lanka</option>
+                <option value="india">India</option>
+                <option value="indonesia">Indonesia</option>
+            </optgroup>
+
+            <optgroup label="Europe">
+                <option value="uk">UK</option>
+                <option value="finland">Finland</option>
+                <option value="hungary">Hungary</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+
+<!--        <input type="submit" value="Submit">-->
+<!--        <input type="reset" value="Reset">-->
+
+        <button type="button">Click</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" name="a">
+        <input type="number" id="b" name="b" value="0">
+
+        <output id="result">30</output>
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <form>
+        <div>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" placeholder="First Name" name="firstname" value="Mahen">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" placeholder="Last Name" name="lastname" value="Abeywickrama">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="course">Course</label><br>
+            <select id="course" name="course">
+                <option value="cmjd">CMJD</option>
+                <option value="gdse" selected>GDSE</option>
+                <option value="dep">DEP</option>
+            </select>
+        </div>
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
